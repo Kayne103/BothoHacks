@@ -1,0 +1,237 @@
+ /* Navbar container */
+  nav{
+    position: fixed;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    z-index: 1;
+  }
+ .navbar {
+    width: 100%;
+    overflow: hidden;
+    background-color: #333;
+    font-family: Arial;
+    background-color: crimson;
+    
+    }
+
+  .navbar h1{
+    font-family: 'Pacifico', cursive;
+    text-align: center;
+  }
+  
+  /* Links inside the navbar */
+  .navbar a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    
+  }
+  
+  /* The dropdown container */
+  .dropdown {
+    float: left;
+    overflow: hidden;
+  }
+  
+  /* Dropdown button */
+  .dropdown .dropbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color:white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit; /* Important for vertical align on mobile phones */
+    margin: 0; /* Important for vertical align on mobile phones */
+    cursor: pointer;
+  }
+  
+  /* Add a red background color to navbar links on hover */
+  .navbar a:hover, .dropdown:hover .dropbtn {
+    background-color:red;
+    border-radius: 15px;
+  }
+
+  
+  /* Dropdown content (hidden by default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  /* Add a grey background color to dropdown links on hover */
+  .dropdown-content a:hover {
+    background-color: crimson;
+  }
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {
+    display: block;
+  } 
+
+  .search {
+    position: absolute;
+    right: 15px;
+    bottom: 20px;
+  }
+* {box-sizing: border-box;}
+
+body {
+  font-family: Verdana, sans-serif;
+  background-color: rgb(200, 200, 200);
+  width: 100%;
+}
+.mySlides {display: none;}
+#slide {height:550px;}
+
+/* Slideshow container */
+.slideshow-container {
+  width: 100%;
+  margin-top: 90px;
+  
+}
+
+/* Caption text */
+.text {
+  color: crimson;
+  font-size: 30px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+  font-family: 'Pacifico', cursive;
+   
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+
+#uib {
+  text-align: center;
+  text-decoration:underline;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+#img {
+  position:relative;
+  top : 0vh;
+  left :0vw;
+  
+}
+
+#schools {
+  text-align: center;
+  position: relative;
+  left: 4%;
+}
+
+.varsity h2 {
+  font-size: 20px;
+}
+
+
+.varsity {
+  width: 30%;
+  float: left;
+  border: 2px solid crimson;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  height: 300px;
+  border-radius: 15px;
+}
+
+
+#cardimage {
+  width: 40%;
+  height: 100px;
+  padding-top: 10px;
+}
+
+.varsity p {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+#btn {
+  background-color: crimson;
+  border-radius: 5px;
+  color: white;
+  padding: 15px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  transition-duration: 0.4s;
+}
+
+#btn:hover {
+  background-color: white;
+  color: black;
+  border: 1px solid crimson;
+}
+
+footer {
+  clear: both;
+  background-color: crimson;
+}
